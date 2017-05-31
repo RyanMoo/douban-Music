@@ -1,0 +1,113 @@
+.cont-left .header-pic {
+    float: left;
+    width: 415px;
+    height: 186px;
+}
+
+/* .cont-left img {
+    width: 100%;
+} */
+
+.cont-left .header-pic .pic {
+    float: left;
+    text-align: center;
+    margin: 3px 12px 0 0;
+    max-width: 155px;
+    overflow: hidden;
+}
+
+.cont-left .header-pic .pic span {
+    text-align: center;
+}
+
+.cont-left .header-pic .pic span a:hover {
+    background: #fff;
+}
+
+.cont-left .header-pic .pic span img {
+    width: 121px;
+    margin-bottom: 10px;
+}
+.cont-left .header-pic .pic .infobox {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.cont-left .header-pic .pic .infobox .bd {
+    background: #66BA9C;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-right: 3px;
+    border-radius: 2px;
+    outline: none;
+}
+
+.cont-left .header-pic .pic .infobox .bd a {
+    position: relative;
+    color: #FCF9FD;
+}
+
+.cont-left .header-pic .pic .infobox .bd a img {
+    position: absolute;
+    left:-17px;
+    top:-2px;
+    zoom:.8;
+}
+
+.cont-left .header-pic .pic .info {
+    float: left;
+    max-width: 248px;
+    word-wrap: break-word;
+}
+
+.cont-left .evaluate {
+    float: left;
+    width: 155px;
+    margin: 2px 0 0 0;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #eaeaea;
+    color: #9b9b9b;
+}
+
+.cont-left .evaluate .box {
+    padding-bottom: 15px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.cont-left .evaluate .box .logo {
+    line-height: 1;
+}
+.cont-left .evaluate .box .ratingBox {
+    line-height: 2;
+    padding: 0;
+}
+.cont-left .evaluate .box .ratingBox strong {
+    float: left;
+    color: #494949;
+    padding: 0;
+    min-width: 30%;
+    font-size: 28px;
+}
+.cont-left .evaluate .box .ratingRight {
+    float: left;
+    padding: 10px 0 10px 6px;
+}
+
+.cont-left .evaluate .box .ratingRight .stars {
+    background-position: 0 -30px;
+    background: -webkit-image-set(url(https://img3.doubanio.com/f/shire/680a4bc4c384199245b080c7104da5be8ed717d3/pics/rating_icons/ic_rating_m.png) 1x, url('https://img3.doubanio.com/f/shire/ee7f53d76c3f8ed4991bdbafdb9b2c90c0aedfef/pics/rating_icons/ic_rating_m@2x.png') 2x) no-repeat;
+    display: inline-block;
+    zoom: 1;
+    width: 75px;
+    height: 15px;
+    margin: 1px 0 0 0;
+    overflow: hidden;
+}
+
+
+
+
+
+

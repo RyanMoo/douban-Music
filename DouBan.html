@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="tools.js"></script>
+    <link rel="stylesheet" type="text/css" href="newPage.css">
+    <link rel="stylesheet" type="text/css" href="DouBan.css">
+    <link rel="stylesheet" type="text/css" href="t-page.css">
+</head>
+<body>
+    <div class='db-header'>
+        <div class="wrapper .clearfloat">
+            <div class='db-info'>
+                <a href="https://www.douban.com/accounts/login?source=music">登录</a>
+                <a href="https://www.douban.com/accounts/register?source=music">注册</a>
+            </div>
+            <div class='db-app'>
+                <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class='link-app'>下载豆瓣客户端</a>
+                <div class='more-items'>
+                    <p>豆瓣</p>
+                    <p>我们的精神部落</p>
+                    <p>扫码直接下载</p>
+                    <div class='download'>
+                        <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=iOS">iPhone</a>
+                        <span>·</span>
+                        <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&direct_dl=1&download=Android">Android</a>
+                    </div>
+                </div>
+            </div>
+            <div class='db-items'>
+                <ul>
+                    <li>
+                        <a href="">豆瓣</a>
+                    </li>
+                    <li>
+                        <a href="">读书</a>
+                    </li>
+                    <li>
+                        <a href="">电影</a>
+                    </li>
+                    <li>
+                        <a href="">音乐</a>
+                    </li>
+                    <li>
+                        <a href="">同城</a>
+                    </li>
+                    <li>
+                        <a href="">小组</a>
+                    </li>
+                    <li>
+                        <a href="">阅读</a>
+                    </li>
+                    <li>
+                        <a href="">FM</a>
+                    </li>
+                    <li>
+                        <a href="">东西</a>
+                    </li>
+                    <li>
+                        <a href="">市集</a>
+                    </li>
+                    <li>
+                        <a href="">更多</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='db-search clearfloat'>
+        <div class='stage'>
+            <div class='box'>
+                <div class='logo'>
+                    <a href="https://music.douban.com">豆瓣音乐</a>
+                </div>
+                <div class='search'>
+                    <form action="">
+                        <label style='display: inline-block;'>唱片名、表演者、条码、ISRC</label>
+                        <div class='inp'>
+                            <input type="text" name="" value placeholder='唱片名、表演者、条码、ISRC' autocomplete = 'off' id='inp'>
+                        </div>
+                        <div class='inp-btn'>
+                            <input type="submit" value='搜索' onClick='return false'/>
+                        </div>
+                        <ul class='more_song'>
+                            <!-- <li>
+                                <a href=alt>
+                                    <img src=image alt="">
+                                    <p>title</p>
+                                    <p>表演者：name</p>
+                                </a>
+                            </li> -->
+                        </ul>
+
+                    </form>
+                    <a href="https://music.douban.com/annual2016/?source=navigation">
+                        <img src="https://img3.doubanio.com/f/music/0b4dbb27aebf2dcc74e25009e1452d0ae5535c38/pics/music/annual2016.png" alt="豆瓣2016年度音乐榜单">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='items'>
+            <div class='items-wrap'>
+                <ul>
+                    <li><a href="https://music.douban.com/artists/">音乐人</a></li>
+                    <li><a href="https://music.douban.com/artists/royalty/">金羊毛计划</a></li>
+                    <li><a href="https://music.douban.com/topics/">专题</a></li>
+                    <li><a href="https://music.douban.com/chart">排行榜</a></li>
+                    <li><a href="https://music.douban.com/tag/">分类浏览</a></li>
+                    <li><a href="https://music.douban.com/review/latest/">乐评</a></li>
+                    <li><a href="https://douban.fm/?from_=music_nav">豆瓣FM</a></li>
+                    <li><a href="https://douban.fm/explore/songlists/">歌单</a></li>
+                    <li><a href="https://artist.douban.com/abilu/2016">阿比鹿音乐奖</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='db-wrapper clearfloat'>
+        <div class='content'>
+            <div class='cont-tit' style='display: none'><h1 class='cont_tit' >豆瓣音乐搜索：oValue</h1></div>
+            <div class='cont-wrap clearfloat'>
+                <div class='cont-left'>
+                    <div class='pics'>
+                        <div class="pics-wrapper">
+                            <ul id='demo'>
+                                <li><img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2438.jpg" alt="" /></li>
+                                <li><img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2439.jpg" alt="" /></li>
+                                <li><img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2437.jpg" alt="" /></li>
+                                <li><img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2430.jpg" alt="" /></li>
+                                <li><img src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2433.jpg" alt="" /></li>
+                                <li><img src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2438.jpg" alt="" /></li>
+                            </ul>
+                            <div class='index'>
+                                <i class='item'></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <button class='btn-left' style="display:none;">&lt;</button>
+                            <button class='btn-right'></button>
+                        </div>
+                    </div>
+                    <div class='pop-week'>
+                        <div class='header'>
+                            <span>本周流行音乐人</span>
+                            |
+                            <span>上升最快音乐人</span>
+                        </div>
+                        <div class='artists'>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                            <div class='artists-items'>
+                                <div class='item'>
+                                    <a href="#">
+                                        <img src="https://img1.doubanio.com/view/site/median/public/f788123243562e7.jpg" alt="">
+                                        <div>
+                                            <p>一如年少模样</p>
+                                            <p>早春的树</p>
+                                            <p>理想三旬</p>
+                                            <p>途中</p>
+                                        </div>
+                                        <span>
+                                            <i></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="" class='info'>陈鸿宇</a>
+                                <p>民谣 Folk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='edi-rec'>
+
+                    </div>
+                    <div class='ad'></div>
+                    <div class='new-alb'></div>
+                    <div class='hot-pro'></div>
+                </div>
+                <div class='cont-right'>
+
+                </div>
+                <div class='search-right'>
+                    <a href="" class='add'>
+                        <img src="https://img3.doubanio.com/view/dale-online/dale_ad/public/eb099c284d2dc2e.jpg" alt="">
+                    </a>
+                    <div class='xg'>
+                        <div class='hd'>
+                            <h2>
+                                相关搜索&nbsp;· &nbsp;· &nbsp;· &nbsp;· &nbsp;· &nbsp;·
+                            </h2>
+                        </div>
+                        <div class='bd'>
+                            <p class="p1" id='p1'><a href="">>&nbsp; 搜索"title"的图书</a></p>
+                            <p class="p1" id='p1'><a href="">>&nbsp; 搜索"title"的电影</a></p>
+                            <p class="p1" id='p1'><a href="">>&nbsp; 搜索"title"的舞台剧</a></p>
+                        </div>
+                    </div>
+                    <p class='index'>
+                        <span><a href="">注册</a>登录以后可以自己添加条目</span>
+                    </p>
+                    <br>
+                    <br>
+                    <span class='spec'>
+                        <a href="">OpenSearch: RSS 2.0</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class='footer'  id='footer'>
+            <span class='fleft'>© 2005－2017 douban.com, all rights reserved 北京豆网科技有限公司</span>
+            <span class='fright'>
+                <a href="">关于豆瓣</a>
+                &nbsp;·&nbsp;
+                <a href="">在豆瓣工作</a>
+                &nbsp;·&nbsp;
+                <a href="">联系我们</a>
+                &nbsp;·&nbsp;
+                <a href="">免责声明</a>
+                &nbsp;·&nbsp;
+                <a href="">帮助中心</a>
+                &nbsp;·&nbsp;
+                <a href="">手机音乐</a>
+                &nbsp;·&nbsp;
+                <a href="">豆瓣广告</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- 跳转之后左边的dom结构 -->
+    <!--
+    <div class='left'>
+
+    </div>
+     -->
+    <!-- 轮播图 -->
+    <script type="text/javascript">
+
+        // 轮播图
+        function g(id) {
+            if(id.substr(0,1) == '.') {
+                return document.getElementsByClassName(id.substr(1))[0];
+            }
+            return document.getElementById(id);
+        }
+
+
+        var oUl = g('demo');
+        var buttonR = g('.btn-right');
+        var iCol = document.getElementsByTagName('i');
+        var timer = null;
+        var index = 0;
+        var num = oUl.children.length - 1;
+        var lock = true;
+
+        for(var i = 0; i < iCol.length; i++) {
+            iCol[i].onclick = (function (j) {
+                return function() {
+                    lock = false
+                    clearInterval(timer)
+                    index = j
+                    changeIndex(index)
+                    startNBMove(oUl, {left : -index * 590}, function() {
+                        lock = true
+                        timer = setInterval(autoMove, 1500)
+                    })
+                }
+            })(i)
+        }
+
+        buttonR.onclick = function () {
+            autoMove(1);
+            console.log('a');
+        }
+
+        function autoMove (direction) {
+            clearInterval(timer)
+            if(lock) {
+                lock = false;
+                if(!direction || direction === 1) {
+                    index++
+                    if(index === num) {
+                        changeIndex(0);
+                    }else {
+                        changeIndex(index);
+                    }
+
+                    startNBMove(oUl, {left : - (index * 590)}, function () {
+                        if(index === num) {
+                            index = 0;
+                            oUl.style.left = '0px';
+                        }
+                        // changeIndex(index);
+                        timer = setInterval(autoMove, 1500)
+                        lock = true
+                        // console.log(index)
+                    })
+                }else if(direction === -1) {
+                    if(index === 0) {
+                        oUl.style.left = -(num * 590) + 'px'
+                        index = num;
+                    }
+                    index--
+                    startNBMove(oUl, {left : -index * 590}, function() {
+                        timer = setInterval(autoMove, 1500)
+                        lock = true
+                        changeIndex(index)
+                    })
+                }
+            }
+        }
+
+        function changeIndex(index) {
+            for(var i = 0; i < iCol.length; i++) {
+                iCol[i].className = ''
+            }
+            iCol[index].className = 'item'
+        }
+
+
+        timer = setInterval(function () {
+            autoMove()
+        }, 1500)
+    </script>
+
+    <!-- 搜索下拉菜单 -->
+    <script type="text/javascript">
+        var timer;
+        var oData;
+        g('inp').onfocus = function () {
+            document.onkeyup = function (e) {
+                var event = e || which.event;
+
+                if(event.which !== 13) {
+                    var oValue = g('inp').value;
+                    // console.log(oValue)
+                    $.ajax({
+                        url:"https://api.douban.com/v2/music/search?q=" + oValue,
+                        type:"GET",
+                        dataType:"jsonp",
+                        crossDomain:"true",
+                        success: function(data) {
+                            // console.log(data)
+                            var cout = data.cout;
+                            var tpl_song = '<li><a href=alt><img src=image alt=""><p>title</p><p>表演者：name</p></a></li>';
+                            // console.log(tpl_song)
+                            var out_song = [];
+                            var saver = data;
+                            var data = data.musics;
+                            for(i in data) {
+                                var _html_song = tpl_song.replace(/alt/g, data[i].alt)
+                                                         .replace(/image/g, data[i].image)
+                                                         .replace(/title/g, data[i].title)
+                                                         .replace(/name/g, data[i].attrs.singer);
+                                out_song.push(_html_song);
+                            }
+                            // console.log(out_song)
+                            g('.more_song').innerHTML = '';
+                            g('.more_song').style.display = 'block';
+                            g('.more_song').innerHTML = out_song.join('');
+
+                            return oData = saver;
+                        }
+                    })
+
+                }
+            }
+            // 搜索当按下enter之后
+            document.onkeydown = function (e) {
+                var oValue = g('inp').value;
+                var event = e || which.event;
+                if(event.which == 13) {
+                    console.log(oData)
+                    $('.cont-left').addClass('padd')
+                    var tpl_left = "<p class='border first'></p><li class='item'><a href='javascript:changeNewPage(demo1)' demo='demo1'><img src=image alt=''></a><p><a href='javascript:changeNewPage(demo1)' demo='demo1'>title</a></p><p class='p1'>content</p><p><span></span><span>average</span><span>(numRaters评价)</span></p></li>";
+                    var tpl_bd = '<p class="p1" id="p1"><a href="">>&nbsp; 搜索"title"的图书</a></p><p class="p1" id="p1"><a href="">>&nbsp; 搜索"title"的电影</a></p><p class="p1" id="p1"><a href="">>&nbsp; 搜索"title"的舞台剧</a></p>'
+                    var tpl_tit = "<h1 class='cont_tit' style='block'>豆瓣音乐搜索：oValue</h1>"
+                    var out_left = [];
+
+                    var data = oData.musics;
+                    for(i in data) {
+                        var out_p = [];
+
+                        out_p.push(data[i].attrs.media);
+                        out_p.push(data[i].attrs.publisher);
+                        out_p.push(data[i].attrs.pubdate);
+                        out_p.push(data[i].attrs.version);
+                        out_p.push(data[i].attrs.singer);
+
+                        out_p = out_p.join('/');
+                        out_p = out_p.replace(/\/+/, '/');
+                        // 处理少于十人评论的和 处理评分
+                        if(data[i].rating.numRaters < 10) {
+                            data[i].rating.numRaters = '少于十人';
+                            data[i].rating.average = '';
+                        }
+
+                        var _html_left = tpl_left.replace(/demo1/g, data[i].id)
+                                                 .replace(/image/g, data[i].image)
+                                                 .replace(/title/g, data[i].title)
+                                                 .replace(/content/, out_p)
+                                                 .replace(/numRaters/, data[i].rating.numRaters)
+                                                 .replace(/average/, data[i].rating.average);
+
+
+                        out_left.push(_html_left);
+                    }
+                    g('.cont-tit').style.display = 'block';
+
+                    console.log(oValue)
+
+                    g('.bd').innerHTML = tpl_bd.replace(/title/g, oValue);
+                    g('.cont-tit').innerHTML = tpl_tit.replace(/oValue/g, oValue);
+
+                    g('.cont-left').innerHTML = out_left.join('');
+
+                    g('.search-right').style.display = 'block';
+                }
+            }
+        }
+
+        g('.more_song').onmouseleave = function () {
+            g('.more_song').style.display = 'none'
+        }
+    </script>
+
+<!--     <div class='header'>
+        <div class='pic'>
+            <span><a href=''><img src=image alt=''></a></span>
+            <div class='infobox'>
+                <div class='bd'>
+                    <a href=radio_url><img src="https://img3.doubanio.com/f/music/2306dcd67c23f9b28b6657dadef088a7e9ab1357/pics/music/subject/start-fm-logo.png" alt="FM">
+                    听相似歌曲
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='info'>
+            <span class='p1'>
+                表演者：
+                <a href=''>author</a>
+            </span>
+            <br>
+            <span class='p1'>流派：</span>
+            &nbsp;tags0
+            <br>
+            <span class='p1'>专辑类型</span>
+            &nbsp;version
+            <br>
+            <span class='p1'>介质:</span>
+            &nbsp;media
+            <br>
+            <span class='p1'>发行时间:</span>
+            &nbsp;pubdate
+            <br>
+            <span class='p1'>
+                出版者:
+                <a href=''>publisher</a>
+            </span>
+        </div>
+    </div>
+    <div class='evaluate'>
+        <div class='box'>
+            <div class='logo'>豆瓣评分</div>
+            <div class='ratingBox'>
+                <strong>average</strong>
+                <div class='ratingRight'>
+                    <div class='stars'></div>
+                    <div class='ratingSum'>
+                        <a href="">
+                            <span>numRaters人评价</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='share'>
+
+    </div>
+    <div class='intro'>
+
+    </div> -->
+
+
+
+
+
+
+<!-- 三级页面   点击之后跳转 -->
+    <script type="text/javascript">
+        function changeNewPage(demo) {
+            $.ajax({
+                url:"https://api.douban.com/v2/music/" + demo ,
+                type:"GET",
+                dataType:"jsonp",
+                crossDomain:"true",
+                success:function(data) {
+                    console.log(data)
+                    g('.cont_tit').innerText = data.title;
+                    var tpl_left = "<div class='header-pic'><div class='pic'><span><a href=''><img src=image alt=''></a></span><div class='infobox'><div class='bd'><a href=radio_url><img src='https://img3.doubanio.com/f/music/2306dcd67c23f9b28b6657dadef088a7e9ab1357/pics/music/subject/start-fm-logo.png' alt='FM'>听相似歌曲</a></div></div></div><div class='info'><span class='p1'>表演者：<a href=''>author</a></span><br><span class='p1'>流派：</span>&nbsp;tags0<br><span class='p1'>专辑类型</span>&nbsp;version<br><span class='p1'>介质:</span>&nbsp;media<br><span class='p1'>发行时间:</span>&nbsp;pubdate<br><span class='p1'>出版者:<a href=''>publisher</a></span></div></div>";
+                    var a = 'a';
+
+                    var tpl_right = "<div class='evaluate'><div class='box'><div class='logo'>豆瓣评分</div><div class='ratingBox'><strong>average</strong><div class='ratingRight'><div class='stars'></div><div class='ratingSum'><a href=''><span>numRaters人评价</span></a></div></div></div></div></div>";
+
+                    tpl_left = tpl_left.replace(/image/, data.image)
+                                       .replace(/radio_url/, data.attrs.radio_url)
+                                       .replace(/author/, data.attrs.singer)
+                                       .replace(/tags0/, data.tags[0].name)
+                                       .replace(/version/, data.attrs.version)
+                                       .replace(/media/, data.attrs.media)
+                                       .replace(/pubdate/, data.attrs.pubdate)
+                                       .replace(/publisher/, data.attrs.publisher);
+
+
+
+
+
+                    tpl_right = tpl_right.replace(/average/, data.rating.average)
+                                         .replace(/numRaters/, data.rating.numRaters);
+                    // console.log(tpl_right)
+
+                    g('.cont-left').innerHTML = tpl_left;
+                    g('.cont-left').innerHTML += tpl_right;
+
+                }
+            })
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

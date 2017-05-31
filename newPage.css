@@ -1,0 +1,111 @@
+/* 搜索框跳转后页面的样式 */
+
+.db-wrapper h1.cont-tit {
+    word-wrap: break-word;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+    margin: 0;
+    padding: 0 0 15px 0;
+    line-height: 1.1;
+}
+
+.db-wrapper .padd {
+    padding-right:40px;
+}
+
+.db-wrapper .cont-left .border {
+    border-bottom: 1px dashed #DDDDDD;
+    line-height: 100%;
+    clear: both;
+    margin: 12px 0;
+}
+
+.db-wrapper .cont-left .item img{
+    float: left;
+    margin-right: 25px;
+}
+
+.db-wrapper .cont-left .item p{
+    font: 14px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+
+.db-wrapper .cont-left .item p:nth-child(2) {
+    color: #37a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.db-wrapper .cont-left .item p:nth-child(2) span:hover {
+    color: #FFFFFF;
+    /* text-decoration: none; */
+    background: #37a;
+}
+
+.p1 {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+    margin: 10px 0;
+    user-select: text;
+}
+
+
+/* 右边栏的样式 */
+
+.db-wrapper .search-right {
+    display: none;
+    float: right;
+    width: 310px;
+}
+
+.db-wrapper .search-right .add {
+    position: relative;
+    margin: 0px 0px 20px;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+}
+
+.db-wrapper .search-right .xg {
+    margin-bottom: 20px;
+}
+
+.db-wrapper .search-right .xg h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+
+.db-wrapper .search-right .index {
+    font: 14px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+
+.db-wrapper .search-right .spec a {
+    color: #BBBBBB;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.db-wrapper .search-right .spec a:hover {
+    color: #FFFFFF;
+    font-size: 12px;
+    border-left: 1px solid #FF9999;
+    border-top: 1px solid #FF9999;
+    border-right: 1px solid #FF3333;
+    border-bottom: 1px solid #FF3333;
+    background-color: #773333;
+    text-align: center;
+}
+
+
+
+

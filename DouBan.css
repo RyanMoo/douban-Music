@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+
+input {
+    font-size: 12px;
+    vertical-align: middle;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    user-select: text;
+    cursor: auto;
+}
+a {
+    color: #37a;
+    text-decoration: none;
+}
+
+.db-wrapper a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #37a;
+}
+
+p {
+    display: block;
+}
+
+.clearfloat::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.db-header {
+    height: 28px;
+    color: #d5d5d5;
+    background-color: #545652;
+    min-width: 950px;
+}
+
+.db-header a {
+    color: #d5d5d5;
+    cursor: pointer;
+}
+
+.db-header a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.db-header .wrapper {}
+
+
+.db-header .wrapper .db-info {
+    float: right;
+    margin: 0 12px 0 0;
+    line-height: 28px;
+}
+
+.db-header .wrapper .db-info a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0 12px;
+    height: 28px;
+}
+
+.db-header .wrapper .db-app {
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    line-height: 28px;
+}
+.db-header .wrapper .db-app .link-app {
+    display: inline-block;
+    zoom: 1;
+    padding: 0 8px;
+    height: 28px;
+}
+.db-header .wrapper .db-app .more-items {
+    padding: 10px 20px 30px;
+    left: -76px;
+    width: 211px;
+    border-top: none;
+    color: #111;
+    font-size: 15px;
+    line-height: 1.62;
+    font-weight: bold;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+.db-header .wrapper .more-items {
+    display: none;
+    position: absolute;
+}
+
+.db-header .wrapper .db-app:hover .more-items {
+    display: block;
+}
+
+.db-header .wrapper .db-app .more-items p:nth-child(1) {
+    padding-top: 170px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    background: url('https://img3.doubanio.com/f/shire/12356a377c5190a72a849e5b5c9034dd538b439e/pics/nav/nav_doubanapp_6.png') no-repeat center;
+}
+.db-header .wrapper .db-app .more-items p:nth-child(2) {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.db-header .wrapper .db-app .more-items p:nth-child(3) {
+    padding-top: 160px;
+    margin-top: 30px;
+    font-size: 0;
+    background: url('https://img3.doubanio.com/f/shire/6aa9dcfa49ca33353c8265cdd43ccdfeb1554285/pics/nav/nav_doubanapp_6_qrcode.png') no-repeat center;
+}
+.db-header .wrapper .db-app .more-items .download {
+    margin-top: 10px;
+}
+.db-header .wrapper .db-app .more-items .download a {
+    color: #37a;
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
+    background: none;
+    padding: 0;
+}
+
+.db-header .db-items {
+    font-size:0;
+}
+
+.db-header .db-items ul {}
+
+.db-header .db-items ul li {
+    display: inline-block;
+    zoom: 1;
+    line-height: 28px;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.db-header .db-items ul li a {
+    display: inline-block;
+    zoom: 1;
+    padding: 0 12px;
+    height: 28px;
+}
+
+.db-search {
+    background: #f0f3ef;
+    width: 100%;
+    min-width: 950px;
+    /* overflow: hidden; */
+    zoom: 1;
+    margin-bottom: 40px;
+}
+
+.db-search .stage {
+    border-color: #e3e9e2;
+    border-bottom: 1px solid #e5ebe4;
+}
+
+.db-search .stage .box {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0 5px;
+    /* overflow: hidden; */
+    zoom: 1;
+}
+
+.db-search .stage .logo {
+    float: left;
+    height: 56px;
+    width: 145px;
+    margin: 0 13px 0 0;
+    background-image: -webkit-image-set(url('https://img3.doubanio.com/f/shire/790e584d54485ea8ca1759469ffcfa54e6bb64ea/pics/nav/lg_music_a12_2.png') 1x, url('https://img3.doubanio.com/f/shire/9620c9fbfbe90e358611ccff94e611458e57ea4a/pics/nav/lg_music@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.db-search .stage .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 100em;
+    color: #555d53;
+}
+
+.db-search .stage .box .search {
+    margin-left: 145px;
+    position: relative;
+    /* overflow: hidden; */
+    zoom: 1;
+    padding: 10px 0 15px 0;
+}
+
+.db-search .stage .box .search form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.db-search .stage .box .search form label {
+    position: absolute;
+    left: 28px;
+    top: 10px;
+    line-height: 30px;
+    cursor: text;
+    color: #bbb;
+    width: auto;
+    z-index:-1;
+}
+
+
+
+.db-search .stage .box .search .inp {
+    float: left;
+    width: 470px;
+    height: 34px;
+    text-align: center;
+    cursor: text;
+    background: url('https://img3.doubanio.com/f/shire/b78a848a3825bda97797e3c1816ad3b01139aa1c/pics/nav1/nav_mu_bg.png') no-repeat 0 0;
+}
+
+.db-search .stage .box .search .inp input {
+    background: #fff;
+    width: 96%;
+    margin: 0;
+    text-align: left;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 0;
+}
+
+.db-search .stage .box .search .inp-btn {
+    position: relative;
+    left: -1px;
+    width: 37px;
+    height: 34px;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db-search .stage .box .search .inp-btn input {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    padding: 35px 0 0 0;
+    overflow: hidden;
+    background: url('https://img3.doubanio.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png') no-repeat 0 -40px;
+    color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+/* 搜索音乐时，下拉列表的样式 */
+
+.db-search .stage .box .search .more_song {
+    display: none;
+    position: absolute;
+    left:12px;
+    margin-top: -2px;
+    max-height: 427px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.db-search .stage .box .search .more_song li {
+    float: left;
+}
+
+.db-search .stage .box .search .more_song a {
+    display: inline-block;
+    height: 60px;
+    width: 470px;
+    background: #fff;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #d5d5d5;
+}
+
+.db-search .stage .box .search .more_song a img{
+    float:left;
+    padding:10px;
+    height:40px;
+    width:40px;
+}
+
+.db-search .stage .box .search .more_song a p:nth-child(2) {
+    display: block;
+    margin-top: 10px;
+    color:#37a;
+}
+
+.db-search .stage .box .search .more_song a p:nth-child(3) {
+    display: block;
+    margin-bottom: 8px;
+    color: #d5d5d5;
+}
+
+
+.db-search .stage .box .search a img {
+    height: 90px;
+    margin-top: 2px;
+}
+
+.db-search .stage .box .search>a {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.db-search .stage .box .search>a:hover {
+    background:#f0f3ef;
+}
+
+.db-search .items {
+    width: 950px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.db-search .items .items-wrap {
+    float: none;
+    zoom: 1;
+    font-size: 13px;
+}
+.db-search .items .items-wrap ul {
+    margin: 9px 0;
+}
+.db-search .items .items-wrap ul li {
+    display: inline;
+    margin-right: 30px;
+}
+.db-search .items .items-wrap ul li a {
+    color: #555d53;
+}
+.db-search .items .items-wrap ul li a:hover {
+    background-color: #555d53;
+    color: #fff;
+}
+
+.db-wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.db-wrapper .content {
+    min-height: 420px;
+}
+
+.db-wrapper .content .cont-wrap {}
+
+.db-wrapper .content .cont-wrap .cont-left {
+    float: left;
+    width: 590px;
+}
+
+.db-wrapper .content .cont-wrap .cont-right {
+    float: right;
+    width: 310px;
+}
+
+/* 右边内容区 */
+
+/* 轮播图 */
+.db-wrapper .cont-wrap .cont-left .pics {
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics .pics-wrapper {
+    position: relative;
+    overflow: hidden;
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    width: 590px;
+    height: 250px;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics ul {
+    position: absolute;
+    width: 3540px;
+    height: 250px;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics ul li {
+    /* position: absolute; */
+    width: 590px;
+    /* display: block; */
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    /* z-index: 100; */
+}
+
+.db-wrapper .cont-wrap .cont-left .pics ul li img {
+    width: 100%;
+    height: 250px;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics button.btn-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: url('https://img3.doubanio.com/f/music/f7a7edb086efd2b104a547882609d490a701dc00/pics/music/home/banner_arrow.png');
+    width: 36px;
+    height: 51px;
+    background-position: 36px 51px;
+    transform: translateY(-50%);
+    border: none;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    z-index: 999;
+    outline: none;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics button.right:hover {
+    background-position: 36px 0px;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics .index {
+    position: absolute;
+    bottom: 0px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics .index i.item {
+    background-color: #139D72;
+}
+
+.db-wrapper .cont-wrap .cont-left .pics .index i {
+    display: inline-block;
+    background-color: #F8F9F9;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    border: 0;
+    color: transparent;
+    border-radius: 50%;
+}
+
+/* 本周流行音乐人 */
+
+.db-wrapper .cont-left .pop-week {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.db-wrapper .cont-left .pop-week .header {
+    border-bottom: 2px solid #02A682;
+}
+.db-wrapper .cont-left .pop-week .header span:nth-child(1) {
+    display: inline-block;
+    font-size: 16px;
+    color: #222;
+    line-height: 30px;
+    margin: 0px;
+    cursor: pointer;
+}
+.db-wrapper .cont-left .pop-week .header span:nth-child(2) {
+    font-size: 13px;
+    color: #999;
+    line-height: 30px;
+    margin: 0px;
+    cursor: pointer;
+}
+.db-wrapper .cont-left .pop-week .artists {
+    text-align: center;
+    background: #F5F7F8;
+    padding: 15px 0px 0px 10px;
+    width: 630px;
+    height: 400px;
+}
+.db-wrapper .cont-left .pop-week .artists-items {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    width: 130px;
+    float: left;
+    margin-right: 17px;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item {
+    height: 120px;
+    width: 120px;
+    /* overflow: hidden; */
+    background: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #DFDCDC;
+    margin-bottom: 10px;
+}
+.db-wrapper .cont-left .pop-week .artists .item a {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: relative;
+}
+.db-wrapper .cont-left .pop-week .artists .item a img {
+    width: 100%;
+    height: 100%;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item a div {
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    zoom: 1;
+    border: none;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item a div p {
+    display: none;
+    position: relative;
+    text-align: left;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFF;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 14px;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item a div p:nth-child(1) {
+    padding-top: 14px;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item a span {
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: -8px 0 0 -8px;
+    background: #222 !important;
+    opacity: .95;
+    border-radius: 100%;
+    text-align: center;
+    zoom: 1;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item a span i {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    margin: 5px 0 0 2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+
+.db-wrapper .cont-left .pop-week .artists a.info{
+    background: url('https://img3.doubanio.com/f/music/d61397f8efe08f2988bd187f2085461bcfc5ce7a/pics/music/home/fleece_small.png') no-repeat;
+    padding-left: 20px;
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #138A64;
+}
+
+
+.db-wrapper .cont-left .pop-week .artists a.info + p {
+    margin: 1px 0 18px 0;
+    color: #999;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item:hover a div {
+    background: #333;
+    opacity: .85;
+}
+
+.db-wrapper .cont-left .pop-week .artists .item:hover a div p {
+    display: block;
+}
+
+.db-wrapper h1.cont_tit {
+    word-wrap: break-word;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+    margin: 0;
+    padding: 0 0 15px 0;
+    line-height: 1.1;
+}
+
+
+.db-wrapper .footer {
+    color: #999;
+    padding: 6px 0;
+    margin-top: 40px;
+    height: 10px;
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px dashed #ddd;
+    margin-bottom:10px;
+}
+
+
+.db-wrapper .footer .fleft {
+   float: left;
+}
+
+.db-wrapper .footer .fright {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
